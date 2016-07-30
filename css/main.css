@@ -1,0 +1,350 @@
+/***** General *****/
+
+html, body {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+
+
+/****** Heade r*****/
+.header{
+	padding: 30px 0px 80px;
+}
+
+.header h1 {
+	font-size: 20px;
+	margin: 12px 0 10px 30px;
+
+}
+
+.header h1 a {
+	color: #333;
+}
+
+.header h1 a:hover {
+	color: #CFB53B;
+	text-decoration: none;
+	transition: 0.25s;
+}
+
+.main .container {
+	max-width: 1050px;
+}
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.header .container {
+	border-bottom: 1px solid #ddd;
+}
+
+.filter {
+	display: flex;
+	margin-top: -80px;
+}
+
+.filter a {
+	padding: 8px 25px;
+	margin: 20px 5px;
+}
+
+.link-active {
+	padding: 8px 25px;
+	border-radius: 5px;
+	background-color: red;
+}
+
+.selected {
+	border: 10px solid red;
+	border-radius: 0px;
+}
+
+
+.filter h4 {
+	font-size: 14px;
+}
+
+
+.hover {
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+
+.coming-soon {
+	position: absolute;
+	bottom: 150px;
+	left: 100px;
+	color: black;
+	font-size: 20px;
+	font-style: italic;
+	display: none;
+	transition: 0.10s;
+}
+
+/******* Nav ******/
+.row ul {
+	list-style: none;
+	padding-left: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+ul.pull-right li {
+	/*display: inline-block;*/
+	padding: 15px 10px 5px;
+}
+
+ul.pull-right li a {
+	padding: 15px 8px;
+	color: #333;
+}
+
+ul.pull-right li a:hover {
+	text-decoration: none;
+	color: #CFB53B;
+	transition: 0.25s;
+}
+
+ul.pull-right li a.active {
+	color: #CFB53B;
+}
+
+
+
+ul.pull-right li.navigation {
+	display: inline-block;
+}
+
+.dropdown-menu {
+	left: 300px;
+	top: 42px;
+}
+
+.dropdown-menu a {
+	display: inherit;	
+}
+
+/******Jumbotron******/
+
+.jumbotron .container {
+	max-width: 100%;
+}
+
+
+.jumbotron h2 span {
+    color: #ffc200;
+}
+
+/****** Main *******/
+
+.main {
+	padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.thumbnail {
+	padding: 0px;
+	/*border: 0px;*/
+}
+
+
+/***** About Me *****/
+
+.jumbotron img {
+	float: left;
+	border-radius: 50%;
+	margin-left: 50px;
+	margin-top: 35px;
+}
+
+.jumbotron h2 {
+	float: right;
+	margin-right: 50px;
+	font-size: 50px;
+    margin-bottom: 120px;
+    margin-top: 35px;
+}
+
+/****** Footer ******/
+
+.footer {
+	padding: 30px;
+	background-color: #eee;
+}
+
+.footer h5 {
+	margin-top: 0px;
+}
+
+.footer p {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.footer img {
+	height: 20px;
+	width: 20px;
+}
+
+.footer a {
+	text-decoration: none;
+	color: #000;
+}
+
+.footer li {
+	margin-bottom: 5px;
+}
+
+
+/******* Contact *******/
+
+
+input {
+	width: 373px;
+	margin: 5px 0px;
+}
+
+
+
+.name-error, .email-error, .texterror {
+	color: red;
+	margin: 10px 0px 0px;
+}
+
+
+textarea {
+	margin-top: 5px;
+}
+
+.supporting h4 {
+	border-bottom: 1px solid #000;
+	width: 100px;
+}
+
+.supporting .col-md-8 {
+	margin-bottom: 80px;
+	margin-right: 10px;
+	padding: 20px;
+	background: #eee;
+}
+
+button {
+	margin-top: 10px;
+	width: 100px;
+}
+
+.supporting .col-md-4 {
+	height: 378px;
+	background-color: #eee;
+	width: 32%;
+}
+
+.supporting .col-md-4 h5 {
+	display: inline;
+}
+
+.supporting ul li:first-child {
+	margin-top: 30px;
+}
+
+.down {
+	margin-top: 15px;
+}
+
+
+
+
+#carousel-example-generic {
+	margin-bottom: 50px;
+}
+
+
+
+#carousel-example-generic .carousel-inner .item img {
+	width: 100%;
+	height: 500px;
+}
+
+
+
+
+
+.bars {
+	float: right;
+	display: none;
+}
+
+
+
+.bars i.fa-times {
+	display: none;
+}
+
+@media (max-width: 700px) {
+	.col-md-4 {
+		text-align: center;
+	}
+
+	.header .col-md-4 h1 {
+		position: absolute;
+		top: -8px;
+	}
+	.col-md-8 ul.pull-right {
+		text-align: center;
+		float: none;
+		/*display: none;*/
+
+	}
+	.row .col-md-3:nth-child(2) {
+		margin-top: 30px;
+	}
+
+	.filter {
+		display: none;
+	}
+
+	.bars {
+		display: inherit;
+	}
+
+
+
+	.col-md-8 ul.pull-right {
+		position: absolute;
+		top: 35px;
+		text-align: inherit;
+		width: 92%;
+		background-color: #e4ebf1;
+		display: none;
+		transition: 10s;
+	}
+
+
+	.col-md-8 ul.small-view {
+		position: absolute;
+		top: 35px;
+		text-align: inherit;
+		width: 92%;
+		background-color: #e4ebf1;
+		display: none;
+		transition: 10s;
+	}
+
+	.col-md-8 ul.small-view li.navigation {
+		display: block;
+		padding: 5px;
+	}
+
+}
+
+@media (min-width: 710px) {
+	.col-md-8 ul.small-view {
+		display: none;
+	}
+}
